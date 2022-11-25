@@ -4,97 +4,7 @@
 {
   "version": "0.2.0",
   "configurations": [
-    {
-      "name": "Python: Pyramid Application",
-      "type": "python",
-      "request": "launch",
-      "module": "pyramid.scripts.pserve",
-      "args": [
-        "${workspaceFolder}\\development.ini"
-      ],
-      "pyramid": true,
-      "jinja": true,
-      "justMyCode": true
-    },
-    {
-      "name": "Python: Flask",
-      "type": "python",
-      "request": "launch",
-      "module": "flask",
-      "env": {
-        "FLASK_APP": "app.py",
-        "FLASK_DEBUG": "1"
-      },
-      "args": [
-        "run",
-        "--no-debugger",
-        "--no-reload"
-      ],
-      "jinja": true,
-      "justMyCode": true
-    },
-    {
-      "name": "Python: Flask",
-      "type": "python",
-      "request": "launch",
-      "module": "flask",
-      "env": {
-        "FLASK_APP": "app.py",
-        "FLASK_DEBUG": "1"
-      },
-      "args": [
-        "run",
-        "--no-debugger",
-        "--no-reload"
-      ],
-      "jinja": true,
-      "justMyCode": true
-    },
-    {
-      "name": "Python: FastAPI",
-      "type": "python",
-      "request": "launch",
-      "module": "uvicorn",
-      "args": [
-        "main:app"
-      ],
-      "jinja": true,
-      "justMyCode": true
-    },
-    {
-      "name": "Python: Django",
-      "type": "python",
-      "request": "launch",
-      "program": "${workspaceFolder}\\manage.py",
-      "args": [
-        "runserver"
-      ],
-      "django": true,
-      "justMyCode": true
-    },
-    {
-      "name": "Python: Attach using Process Id",
-      "type": "python",
-      "request": "attach",
-      "processId": "${command:pickProcess}",
-      "justMyCode": true
-    },
-    {
-      "name": "Python: Remote Attach",
-      "type": "python",
-      "request": "attach",
-      "connect": {
-        "host": "localhost",
-        "port": 5678
-      },
-      "pathMappings": [
-        {
-          "localRoot": "${workspaceFolder}",
-          "remoteRoot": "."
-        }
-      ],
-      "justMyCode": true
-    },
+    
     {},
     {
       "args": [
@@ -644,21 +554,20 @@
       "name": "(gdb) Attach",
       "type": "cppdbg",
       "request": "attach",
-      "program": "enter program name, for example ${workspaceFolder}/a.exe",
-      ,hello world workspaceFolder
+      "program": "enter program name, for example ${workspaceFolder}/a.exe",,hello world workspaceFolder
       "MIMode": "gdb",
       "miDebuggerPath": "/path/to/gdb",
       "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        },
-        {
-          "description": "Set Disassembly Flavor to Intel",
-          "text": "-gdb-set disassembly-flavor intel",
-          "ignoreFailures": true
-        }
+          {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          },
+          {
+              "description":  "Set Disassembly Flavor to Intel",
+              "text": "-gdb-set disassembly-flavor intel",
+              "ignoreFailures": true
+          }
       ]
     },
     {
@@ -668,6 +577,7 @@
       "module": "enter-your-module-name",
       "justMyCode": true
     },
+
     {
       "name": "Run on Kubernetes",
       "type": "cloudcode.kubernetes",
