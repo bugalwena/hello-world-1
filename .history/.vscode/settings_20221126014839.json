@@ -1,0 +1,20 @@
+{
+    "cSpell.words": [
+        "atleast",
+        "bazel",
+        "binfmt",
+        "Buildpack",
+        "cfgfd",
+        "cloudrun",
+        "dockerconfigjson",
+        "intellij",
+        "kaniko",
+        "otherflag",
+        "projectid",
+        "secretdocker",
+        "Stackdriver",
+        "tolerations",
+        "unpushed",
+        "workingdir"
+    ]
+}
